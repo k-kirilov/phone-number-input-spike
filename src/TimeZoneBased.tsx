@@ -16,7 +16,6 @@ export function TimeZoneBased() {
   const { control, watch, setError, clearErrors, formState } = useForm();
 
   const phoneNumber = watch(PHONE_NUMBER_NAME);
-  console.log(Intl.DateTimeFormat().resolvedOptions());
 
   useEffect(() => {
     clearErrors();
